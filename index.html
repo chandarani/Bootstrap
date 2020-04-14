@@ -15,7 +15,7 @@
     <title>Ristorante Con Fusion</title>
 </head>
 
-<body>
+<body >
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top ">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -30,7 +30,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a data-toggle="modal" data-target="#loginModal" >
                         <span class="fa fa-sign-in"></span>Login
                     </a>
                 </span>
@@ -42,7 +42,7 @@
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header ">
                     <h4 class="modal-title">Login</h4>
                     <button type="button" class="close" data-dismiss="modal">
                         &times;
@@ -80,13 +80,13 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
-                <div class="modal-header bg-warning ">
+                <div class="modal-header">
                     <h4 class="modal-title" ><strong>Reserve Table</strong></h4>
                     <button type="button" class="close" data-dismiss="modal">
                         &times;
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body  ">
                     <form>
                         <div class="form-group row">
                             <label for="noofguests" class="col-12 col-sm-3 col-form-label"><strong>Number of Guests</strong></label>
@@ -365,6 +365,12 @@
                 $('#carouselButton').children('span').removeClass('fa-play');
                 $('#carouselButton').children('span').addClass('fa-pause');
              }
+         });
+         $("#reserveModalToggle").click(function(){
+             $('reserveModal').modal('toggle');
+         });
+         $("#loginModalToggle").click(function(){
+             $("#loginModal").modal('toggle');
          });
      });
  </script>
