@@ -1,7 +1,7 @@
 $lt-gray: #ddd;
-$background-dark: #615D6C;
-$background-light: #9AD4D6;
-$background-pale: #F2FDFF;
+$background-dark: #512da8;
+$background-light: #9575cd;
+$background-pale: #d1c4e9;
 
 $carousel-item-height: 300px;
 
@@ -68,37 +68,34 @@ body {
 }
 
 #carouselButton {
-    right: 0px;
-    position: absolute;
-    bottom: 0px;
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
 }
 
 .carousel-caption {
     top: 50%;
-transform: translateY(-50%);
-bottom: initial;
-color: #000000;
+    transform: translateY(-50%);
+    bottom: initial;
+    color: #000000;
 }
 
-.modal-content{
-      
-    background: #8EA4D2;
+.modal {    
     
-
-        .modal-header{
-            background: $background-dark;
-            color: floralwhite;
-
-
-            .close{
-                color: floralwhite;
-                &:hover {
-                    color: $background-pale !important;
-                  }
-            }
+    .modal-header {
+        background-color: $background-dark;
+        color:floralwhite;
+        button {
+            color:floralwhite;            
         }
-        .modal-body {
-            background-color: $background-pale;
-          }
+    }
 
+    .modal-body {
+        background-color: $background-pale;
+    }
+
+    .modal-footer {
+        background: $background-light;
+    }
 }
